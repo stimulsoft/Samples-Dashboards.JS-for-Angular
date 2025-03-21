@@ -12,7 +12,7 @@ import { Stimulsoft } from "stimulsoft-dashboards-js-angular";
 export class ExportingDashboardToHTML {
     async saveDashboardHtml() {
         var report = new Stimulsoft.Report.StiReport();
-        report.loadFile("Dashboard.mrt");
+        report.loadFile("Dashboards/Dashboard.mrt");
 
         await report.renderAsync2();
 

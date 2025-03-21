@@ -13,7 +13,7 @@ export class SupplyCustomHeadersForJsonDatabase {
 
     constructor() {
         this.report = new Stimulsoft.Report.StiReport();
-        this.report.loadFile("OrdersUrl.mrt");
+        this.report.loadFile("Dashboards/OrdersUrl.mrt");
 
         this.report.onBeginProcessData = function (args) {
             if (args.database === "JSON" && args.command === "GetData") {

@@ -12,7 +12,7 @@ export class UsingDashboardVariablesInCode {
 
     constructor() {
         this.report = new Stimulsoft.Report.StiReport();
-        this.report.loadFile("Variables.mrt");
+        this.report.loadFile("Dashboards/Variables.mrt");
 
         this.report.setVariable("Name", "Andrew");
         this.report.setVariable("Surname", "Fox");

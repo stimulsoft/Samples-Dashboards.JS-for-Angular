@@ -1,15 +1,23 @@
 {
-  "ReportVersion": "2025.1.5",
-  "ReportGuid": "63009f66c81b042d411582c851ac4d0c",
+  "ReportVersion": "2025.2.1.0",
+  "ReportGuid": "e8a7eddd84cd4fa79904632cc3d5b3d4",
   "ReportName": "Report",
   "ReportAlias": "Report",
-  "ReportFile": "Variables.mrt",
-  "ReportCreated": "/Date(0+0300)/",
-  "ReportChanged": "/Date(1740554832000+0300)/",
+  "ReportCreated": "/Date(0+0100)/",
+  "ReportChanged": "/Date(1742573830895+0100)/",
   "EngineVersion": "EngineV2",
-  "ReportUnit": "Centimeters",
-  "ScriptLanguage": "CSharp",
+  "Script": "using System;\r\nusing System.Drawing;\r\nusing System.Windows.Forms;\r\nusing System.Data;\r\nusing Stimulsoft.Controls;\r\nusing Stimulsoft.Base.Drawing;\r\nusing Stimulsoft.Report;\r\nusing Stimulsoft.Report.Dialogs;\r\nusing Stimulsoft.Report.Components;\r\n\r\nnamespace Reports\r\n{\r\n    public class Report : Stimulsoft.Report.StiReport\r\n    {\r\n        public Report()        {\r\n            this.InitializeComponent();\r\n        }\r\n\r\n        #region StiReport Designer generated code - do not modify\r\n\t\t#endregion StiReport Designer generated code - do not modify\r\n    }\r\n}\r\n",
   "CalculationMode": "Interpretation",
+  "ReferencedAssemblies": {
+    "0": "System.Dll",
+    "1": "System.Drawing.Dll",
+    "2": "System.Windows.Forms.Dll",
+    "3": "System.Data.Dll",
+    "4": "System.Xml.Dll",
+    "5": "Stimulsoft.Controls.Dll",
+    "6": "Stimulsoft.Base.Dll",
+    "7": "Stimulsoft.Report.Dll"
+  },
   "Dictionary": {
     "Variables": {
       "0": {
@@ -25,7 +33,8 @@
         "Alias": "BirthDay",
         "Type": "System.DateTime",
         "Category": "Category",
-        "InitBy": "Expression"
+        "InitBy": "Expression",
+        "Key": "fc2205a9d5034fb7bd39bf9254afd002"
       },
       "2": {
         "Value": "\"\"",
@@ -54,6 +63,10 @@
         "Alias": "Surname",
         "Type": "System.String",
         "Category": "Category"
+      },
+      "6": {
+        "Type": "System.String",
+        "Category": "Category"
       }
     }
   },
@@ -62,9 +75,6 @@
       "Ident": "StiDashboard",
       "Name": "Dashboard1",
       "Guid": "3f52c58774ec0a016afc10ccef8ac0d0",
-      "Interaction": {
-        "Ident": "StiInteraction"
-      },
       "Brush": "solid:",
       "Components": {
         "0": {
@@ -72,22 +82,20 @@
           "Name": "TextElement1",
           "Guid": "6e9f60d4dc647bfa727ef9820ac8126d",
           "ClientRectangle": "400,20,320,60",
-          "Interaction": {
-            "Ident": "StiInteraction"
-          },
           "Border": ";;;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Text": "<font face=\"Arial\" size=\"24\" ><text-align=\"Center\"><font-color=\"#696969\"><span size=\"12\">Variables</span></font-color></text-align></font>",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;",
+          "Title": {
+            "Text": "Text",
+            "Visible": false
+          },
           "DashboardInteraction": {
             "Ident": "Text",
             "OnHover": "ShowToolTip",
             "OnClick": "OpenHyperlink",
             "HyperlinkDestination": "NewTab"
-          },
-          "Text": "<font face=\"Arial\" size=\"24\" ><text-align=\"Center\"><font-color=\"#696969\"><span size=\"12\">Variables</span></font-color></text-align></font>",
-          "CornerRadius": "0, 0, 0, 0",
-          "Shadow": ";;;",
-          "Title": {
-            "Text": "Text",
-            "Visible": false
           }
         },
         "1": {
@@ -95,22 +103,23 @@
           "Name": "TextElement2",
           "Guid": "cf12d0440849e53adcbbafc0f08a557a",
           "ClientRectangle": "280,120,280,40",
-          "Interaction": {
-            "Ident": "StiInteraction"
-          },
           "Border": ";;;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Padding": {
+            "Right": 3.0
+          },
+          "Text": "<font face=\"Arial\" size=\"16\" ><text-align=\"Right\"><b>Name</b></text-align></font>",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;",
+          "Title": {
+            "Text": "Text",
+            "Visible": false
+          },
           "DashboardInteraction": {
             "Ident": "Text",
             "OnHover": "ShowToolTip",
             "OnClick": "OpenHyperlink",
             "HyperlinkDestination": "NewTab"
-          },
-          "Text": "<font face=\"Arial\" size=\"16\" ><text-align=\"Right\"><b>Name</b></text-align></font>",
-          "CornerRadius": "0, 0, 0, 0",
-          "Shadow": ";;;",
-          "Title": {
-            "Text": "Text",
-            "Visible": false
           }
         },
         "2": {
@@ -118,22 +127,23 @@
           "Name": "TextElement3",
           "Guid": "c0136f5f18043f377e285ca5dac9c3e9",
           "ClientRectangle": "280,160,280,40",
-          "Interaction": {
-            "Ident": "StiInteraction"
-          },
           "Border": ";;;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Padding": {
+            "Right": 3.0
+          },
+          "Text": "<font face=\"Arial\" size=\"16\"><text-align=\"right\"><b>Surname</b></text-align=\"right\"></font>",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;",
+          "Title": {
+            "Text": "Text",
+            "Visible": false
+          },
           "DashboardInteraction": {
             "Ident": "Text",
             "OnHover": "ShowToolTip",
             "OnClick": "OpenHyperlink",
             "HyperlinkDestination": "NewTab"
-          },
-          "Text": "<font face=\"Arial\" size=\"16\"><text-align=\"right\"><b>Surname</b></text-align=\"right\"></font>",
-          "CornerRadius": "0, 0, 0, 0",
-          "Shadow": ";;;",
-          "Title": {
-            "Text": "Text",
-            "Visible": false
           }
         },
         "3": {
@@ -141,23 +151,24 @@
           "Name": "TextElement4",
           "Guid": "c2af67b226c9b67178cdeeb8635ff6ff",
           "ClientRectangle": "560,120,280,40",
-          "Interaction": {
-            "Ident": "StiInteraction"
-          },
           "Border": ";;;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Padding": {
+            "Left": 3.0
+          },
+          "ForeColor": "91,155,213",
+          "Text": "<font face=\"Arial\" size=\"16\" ><text-align=\"Left\"><b><font-color=\"#5b9bd5\">{Name}</font-color></b></text-align></font>",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;",
+          "Title": {
+            "Text": "Text",
+            "Visible": false
+          },
           "DashboardInteraction": {
             "Ident": "Text",
             "OnHover": "ShowToolTip",
             "OnClick": "OpenHyperlink",
             "HyperlinkDestination": "NewTab"
-          },
-          "ForeColor": "91,155,213",
-          "Text": "<font face=\"Arial\" size=\"16\" ><text-align=\"Left\"><b><font-color=\"#5b9bd5\">{Name}</font-color></b></text-align></font>",
-          "CornerRadius": "0, 0, 0, 0",
-          "Shadow": ";;;",
-          "Title": {
-            "Text": "Text",
-            "Visible": false
           }
         },
         "4": {
@@ -165,23 +176,24 @@
           "Name": "TextElement5",
           "Guid": "01da5ff8ad6b41f5e8b0d32b6956e287",
           "ClientRectangle": "560,160,280,40",
-          "Interaction": {
-            "Ident": "StiInteraction"
-          },
           "Border": ";;;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Padding": {
+            "Left": 3.0
+          },
+          "ForeColor": "91,155,213",
+          "Text": "<font face=\"Arial\" size=\"16\"><text-align=\"left\"><b><font color=\"#5b9bd5\">{Surname}</font></b></text-align=\"left\"></font>",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;",
+          "Title": {
+            "Text": "Text",
+            "Visible": false
+          },
           "DashboardInteraction": {
             "Ident": "Text",
             "OnHover": "ShowToolTip",
             "OnClick": "OpenHyperlink",
             "HyperlinkDestination": "NewTab"
-          },
-          "ForeColor": "91,155,213",
-          "Text": "<font face=\"Arial\" size=\"16\"><text-align=\"left\"><b><font color=\"#5b9bd5\">{Surname}</font></b></text-align=\"left\"></font>",
-          "CornerRadius": "0, 0, 0, 0",
-          "Shadow": ";;;",
-          "Title": {
-            "Text": "Text",
-            "Visible": false
           }
         },
         "5": {
@@ -189,22 +201,23 @@
           "Name": "TextElement6",
           "Guid": "45dd993fe77477e59feef714c47fb92a",
           "ClientRectangle": "280,200,280,40",
-          "Interaction": {
-            "Ident": "StiInteraction"
-          },
           "Border": ";;;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Padding": {
+            "Right": 3.0
+          },
+          "Text": "<font face=\"Arial\" size=\"16\" ><text-align=\"Right\"><b>Email</b></text-align></font>",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;",
+          "Title": {
+            "Text": "Text",
+            "Visible": false
+          },
           "DashboardInteraction": {
             "Ident": "Text",
             "OnHover": "ShowToolTip",
             "OnClick": "OpenHyperlink",
             "HyperlinkDestination": "NewTab"
-          },
-          "Text": "<font face=\"Arial\" size=\"16\" ><text-align=\"Right\"><b>Email</b></text-align></font>",
-          "CornerRadius": "0, 0, 0, 0",
-          "Shadow": ";;;",
-          "Title": {
-            "Text": "Text",
-            "Visible": false
           }
         },
         "6": {
@@ -212,23 +225,24 @@
           "Name": "TextElement7",
           "Guid": "a9fa6994bbe8d9f1000aafbe96918b77",
           "ClientRectangle": "560,200,280,40",
-          "Interaction": {
-            "Ident": "StiInteraction"
-          },
           "Border": ";;;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Padding": {
+            "Left": 3.0
+          },
+          "ForeColor": "91,155,213",
+          "Text": "<font face=\"Arial\" size=\"16\"><text-align=\"left\"><b><font color=\"#5b9bd5\">{Email}</font></b></text-align=\"left\"></font>",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;",
+          "Title": {
+            "Text": "Text",
+            "Visible": false
+          },
           "DashboardInteraction": {
             "Ident": "Text",
             "OnHover": "ShowToolTip",
             "OnClick": "OpenHyperlink",
             "HyperlinkDestination": "NewTab"
-          },
-          "ForeColor": "91,155,213",
-          "Text": "<font face=\"Arial\" size=\"16\"><text-align=\"left\"><b><font color=\"#5b9bd5\">{Email}</font></b></text-align=\"left\"></font>",
-          "CornerRadius": "0, 0, 0, 0",
-          "Shadow": ";;;",
-          "Title": {
-            "Text": "Text",
-            "Visible": false
           }
         },
         "7": {
@@ -236,22 +250,23 @@
           "Name": "TextElement8",
           "Guid": "8f45bd9f2fd88686d96a0484752c9d7c",
           "ClientRectangle": "280,240,280,40",
-          "Interaction": {
-            "Ident": "StiInteraction"
-          },
           "Border": ";;;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Padding": {
+            "Right": 3.0
+          },
+          "Text": "<font face=\"Arial\" size=\"16\"><text-align=\"right\"><b>Address</b></text-align=\"right\"></font>",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;",
+          "Title": {
+            "Text": "Text",
+            "Visible": false
+          },
           "DashboardInteraction": {
             "Ident": "Text",
             "OnHover": "ShowToolTip",
             "OnClick": "OpenHyperlink",
             "HyperlinkDestination": "NewTab"
-          },
-          "Text": "<font face=\"Arial\" size=\"16\"><text-align=\"right\"><b>Address</b></text-align=\"right\"></font>",
-          "CornerRadius": "0, 0, 0, 0",
-          "Shadow": ";;;",
-          "Title": {
-            "Text": "Text",
-            "Visible": false
           }
         },
         "8": {
@@ -259,23 +274,24 @@
           "Name": "TextElement9",
           "Guid": "5d12b11675d36551bf599b84596fb922",
           "ClientRectangle": "560,240,280,40",
-          "Interaction": {
-            "Ident": "StiInteraction"
-          },
           "Border": ";;;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Padding": {
+            "Left": 3.0
+          },
+          "ForeColor": "91,155,213",
+          "Text": "<font face=\"Arial\" size=\"16\"><text-align=\"left\"><b><font color=\"#5b9bd5\">{Address}</font></b></text-align=\"left\"></font>",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;",
+          "Title": {
+            "Text": "Text",
+            "Visible": false
+          },
           "DashboardInteraction": {
             "Ident": "Text",
             "OnHover": "ShowToolTip",
             "OnClick": "OpenHyperlink",
             "HyperlinkDestination": "NewTab"
-          },
-          "ForeColor": "91,155,213",
-          "Text": "<font face=\"Arial\" size=\"16\"><text-align=\"left\"><b><font color=\"#5b9bd5\">{Address}</font></b></text-align=\"left\"></font>",
-          "CornerRadius": "0, 0, 0, 0",
-          "Shadow": ";;;",
-          "Title": {
-            "Text": "Text",
-            "Visible": false
           }
         },
         "9": {
@@ -283,22 +299,23 @@
           "Name": "TextElement10",
           "Guid": "05caefe1c89e1b9c507c62444db4f380",
           "ClientRectangle": "280,280,280,40",
-          "Interaction": {
-            "Ident": "StiInteraction"
-          },
           "Border": ";;;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Padding": {
+            "Right": 3.0
+          },
+          "Text": "<font face=\"Arial\" size=\"16\"><text-align=\"right\"><b>Sex</b></text-align=\"right\"></font>",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;",
+          "Title": {
+            "Text": "Text",
+            "Visible": false
+          },
           "DashboardInteraction": {
             "Ident": "Text",
             "OnHover": "ShowToolTip",
             "OnClick": "OpenHyperlink",
             "HyperlinkDestination": "NewTab"
-          },
-          "Text": "<font face=\"Arial\" size=\"16\"><text-align=\"right\"><b>Sex</b></text-align=\"right\"></font>",
-          "CornerRadius": "0, 0, 0, 0",
-          "Shadow": ";;;",
-          "Title": {
-            "Text": "Text",
-            "Visible": false
           }
         },
         "10": {
@@ -306,23 +323,24 @@
           "Name": "TextElement11",
           "Guid": "3930b747367b17a18c119b9a47925c5e",
           "ClientRectangle": "560,280,280,40",
-          "Interaction": {
-            "Ident": "StiInteraction"
-          },
           "Border": ";;;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Padding": {
+            "Left": 3.0
+          },
+          "ForeColor": "91,155,213",
+          "Text": "<font face=\"Arial\" size=\"16\"><text-align=\"left\"><b><font color=\"#5b9bd5\">{IIF(Sex, \"Male\", \"Female\")}</font></b></text-align=\"left\"></font>",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;",
+          "Title": {
+            "Text": "Text",
+            "Visible": false
+          },
           "DashboardInteraction": {
             "Ident": "Text",
             "OnHover": "ShowToolTip",
             "OnClick": "OpenHyperlink",
             "HyperlinkDestination": "NewTab"
-          },
-          "ForeColor": "91,155,213",
-          "Text": "<font face=\"Arial\" size=\"16\"><text-align=\"left\"><b><font color=\"#5b9bd5\">{IIF(Sex, \"Male\", \"Female\")}</font></b></text-align=\"left\"></font>",
-          "CornerRadius": "0, 0, 0, 0",
-          "Shadow": ";;;",
-          "Title": {
-            "Text": "Text",
-            "Visible": false
           }
         },
         "11": {
@@ -330,22 +348,23 @@
           "Name": "TextElement12",
           "Guid": "3e55f3aee33902b85f0619f29d634569",
           "ClientRectangle": "280,320,280,40",
-          "Interaction": {
-            "Ident": "StiInteraction"
-          },
           "Border": ";;;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Padding": {
+            "Right": 3.0
+          },
+          "Text": "<font face=\"Arial\" size=\"16\"><text-align=\"right\"><b>Birth Day</b></text-align=\"right\"></font>",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;",
+          "Title": {
+            "Text": "Text",
+            "Visible": false
+          },
           "DashboardInteraction": {
             "Ident": "Text",
             "OnHover": "ShowToolTip",
             "OnClick": "OpenHyperlink",
             "HyperlinkDestination": "NewTab"
-          },
-          "Text": "<font face=\"Arial\" size=\"16\"><text-align=\"right\"><b>Birth Day</b></text-align=\"right\"></font>",
-          "CornerRadius": "0, 0, 0, 0",
-          "Shadow": ";;;",
-          "Title": {
-            "Text": "Text",
-            "Visible": false
           }
         },
         "12": {
@@ -353,28 +372,26 @@
           "Name": "TextElement13",
           "Guid": "bb68f1ccddc2065a3fdaedbae03c519f",
           "ClientRectangle": "560,320,280,40",
-          "Interaction": {
-            "Ident": "StiInteraction"
-          },
           "Border": ";;;;",
+          "AltClientRectangle": "0,0,0,0",
+          "Padding": {
+            "Left": 3.0
+          },
+          "ForeColor": "91,155,213",
+          "Text": "<font face=\"Arial\" size=\"16\"><text-align=\"Left\"><b>{Format(\"{0:MM.dd.yyyy}\", BirthDay)}</b></text-align></font>",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;",
+          "Title": {
+            "Text": "Text",
+            "Visible": false
+          },
           "DashboardInteraction": {
             "Ident": "Text",
             "OnHover": "ShowToolTip",
             "OnClick": "OpenHyperlink",
             "HyperlinkDestination": "NewTab"
-          },
-          "ForeColor": "91,155,213",
-          "Text": "<font face=\"Arial\" size=\"16\"><text-align=\"left\"><b><font color=\"#5b9bd5\">{BirthDay}</font></b></text-align=\"left\"></font>",
-          "CornerRadius": "0, 0, 0, 0",
-          "Shadow": ";;;",
-          "Title": {
-            "Text": "Text",
-            "Visible": false
           }
         }
-      },
-      "Watermark": {
-        "TextBrush": "solid:50,0,0,0"
       },
       "Border": ";;2;;;;;solid:Black",
       "ContentAlignment": "Center"

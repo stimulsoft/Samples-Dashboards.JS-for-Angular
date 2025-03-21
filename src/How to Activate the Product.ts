@@ -17,6 +17,6 @@ export class HowToActivateTheProduct {
         // Stimulsoft.Base.StiLicense.loadFromFile('license.key')
 
         this.report = new Stimulsoft.Report.StiReport();
-        this.report.loadFile("Dashboard.mrt");
+        this.report.loadFile("Dashboards/Dashboard.mrt");
     }
 }

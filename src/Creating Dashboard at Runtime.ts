@@ -15,7 +15,7 @@ export class CreatingDashboardAtRuntime {
         var dashboard = this.report.pages.getByIndex(0) as Stimulsoft.Dashboard.Components.StiDashboard;
 
         var dataSet = new Stimulsoft.System.Data.DataSet();
-        dataSet.readJsonFile("Demo.json");
+        dataSet.readJsonFile("Data/Demo.json");
 
         this.report.regData("Demo", "Demo", dataSet);
         this.report.dictionary.synchronize();

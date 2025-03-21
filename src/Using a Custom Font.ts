@@ -13,10 +13,10 @@ export class UsingCustomFont {
 
     constructor() {
         this.report = new Stimulsoft.Report.StiReport();
-        this.report.loadFile("CusomFontDashboard.mrt");
+        this.report.loadFile("Dashboards/CusomFontDashboard.mrt");
 
         // Adding Custom Font
-        Stimulsoft.Base.StiFontCollection.addFontFile('LongCang-Regular.ttf');
+        Stimulsoft.Base.StiFontCollection.addFontFile('Fonts/LongCang-Regular.ttf');
 
         this.designerOptions = new Stimulsoft.Designer.StiDesignerOptions();
         this.designerOptions.appearance.fullScreenMode = true;

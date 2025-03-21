@@ -24,14 +24,14 @@ export class GlobalizingDashboard {
 
     update(e: any) {
         var selectedCountry = e.value;
-        const locFile = selectedCountry.substring(0, 2) + ".xml";
+        const locFile = `Localizations/` + selectedCountry.substring(0, 2) + ".xml";
         Stimulsoft.Base.Localization.StiLocalization.setLocalizationFile(locFile);
 
         this.viewerOptions = new Stimulsoft.Viewer.StiViewerOptions();
         this.viewerOptions.height = "800px";
 
         this.report = new Stimulsoft.Report.StiReport();
-        this.report.loadFile("Globalization.mrt");
+        this.report.loadFile("Dashboards/Globalization.mrt");
         this.report.culture = selectedCountry;
     }
 

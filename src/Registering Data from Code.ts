@@ -17,22 +17,22 @@ export class RegisteringDataFromCode {
 
     updateReport(dataSet: Stimulsoft.System.Data.DataSet) {
         this.report = new Stimulsoft.Report.StiReport();
-        this.report.loadFile("Orders.mrt");
+        this.report.loadFile("Dashboards/Orders.mrt");
         this.report.dictionary.databases.clear();
         this.report.regData("Orders", "Orders", dataSet);
     }
 
     buttonXmlClick() {
         var dataSet = new Stimulsoft.System.Data.DataSet();
-        dataSet.readXmlSchemaFile("Orders.xsd");
-        dataSet.readXmlFile("Orders.xml");
+        dataSet.readXmlSchemaFile("Data/Orders.xsd");
+        dataSet.readXmlFile("Data/Orders.xml");
 
         this.updateReport(dataSet);
     }
 
     buttonJsonClick() {
         var dataSet = new Stimulsoft.System.Data.DataSet();
-        dataSet.readJsonFile("Orders.json");
+        dataSet.readJsonFile("Data/Orders.json");
 
         this.updateReport(dataSet);
     }

@@ -13,7 +13,7 @@ export class UsingTheRightToLeftModeInTheViewer {
 
     constructor() {
         this.report = new Stimulsoft.Report.StiReport();
-        this.report.loadFile("Dashboard.mrt");
+        this.report.loadFile("Dashboards/Dashboard.mrt");
 
         this.viewerOptions = new Stimulsoft.Viewer.StiViewerOptions();
         this.viewerOptions.appearance.rightToLeft = true;

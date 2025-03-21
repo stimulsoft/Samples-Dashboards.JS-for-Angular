@@ -13,7 +13,7 @@ export class CustomizingTheDesigner {
 
     constructor() {
         this.report = new Stimulsoft.Report.StiReport();
-        this.report.loadFile("Dashboard.mrt");
+        this.report.loadFile("Dashboards/Dashboard.mrt");
 
         this.designerOptions = new Stimulsoft.Designer.StiDesignerOptions();
         this.designerOptions.appearance.theme = Stimulsoft.Designer.StiDesignerTheme.Office2022LightGrayTeal;

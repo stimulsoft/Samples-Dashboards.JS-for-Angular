@@ -27,7 +27,7 @@ export class UsingCustomDataAdapter {
         });
 
         this.report = new Stimulsoft.Report.StiReport();
-        this.report.loadFile("CustomAdapter.mrt");
+        this.report.loadFile("Dashboards/CustomAdapter.mrt");
 
         this.designerOptions = new Stimulsoft.Designer.StiDesignerOptions();
         this.designerOptions.appearance.fullScreenMode = true;

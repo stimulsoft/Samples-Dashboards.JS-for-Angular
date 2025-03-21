@@ -16,7 +16,7 @@ export class UsingDesignerEvents {
 
     onCreateReport(args: Stimulsoft.Designer.CreateReportArgs) {
         var dataSet = new Stimulsoft.System.Data.DataSet("Demo");
-        dataSet.readJsonFile("Demo.json");
+        dataSet.readJsonFile("Data/Demo.json");
         args.report.regData("Demo", "Demo", dataSet);
         args.report.dictionary.synchronize();
     }
@@ -31,7 +31,7 @@ export class UsingDesignerEvents {
 
     constructor() {
         this.report = new Stimulsoft.Report.StiReport();
-        this.report.loadFile("Dashboard.mrt");
+        this.report.loadFile("Dashboards/Dashboard.mrt");
 
         this.designerOptions = new Stimulsoft.Designer.StiDesignerOptions();
         this.designerOptions.appearance.fullScreenMode = true;

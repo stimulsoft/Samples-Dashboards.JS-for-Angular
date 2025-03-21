@@ -13,12 +13,12 @@ export class LocalizingTheViewer {
 
     constructor() {
         this.report = new Stimulsoft.Report.StiReport();
-        this.report.loadFile("Dashboard.mrt");
+        this.report.loadFile("Dashboards/Dashboard.mrt");
 
         this.viewerOptions = new Stimulsoft.Viewer.StiViewerOptions();
         this.viewerOptions.appearance.fullScreenMode = true;
 
         // Add a localization file and load the file when the viewer is started
-        Stimulsoft.Base.Localization.StiLocalization.setLocalizationFile("pt.xml");
+        Stimulsoft.Base.Localization.StiLocalization.setLocalizationFile("Localizations/pt.xml");
     }
 }

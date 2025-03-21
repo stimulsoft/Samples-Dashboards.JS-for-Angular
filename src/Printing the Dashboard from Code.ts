@@ -23,6 +23,6 @@ export class PrintingTheDashboardFromCode {
 
     constructor() {
         this.report = new Stimulsoft.Report.StiReport();
-        this.report.loadFile("Dashboard.mrt");
+        this.report.loadFile("Dashboards/Dashboard.mrt");
     }
 }

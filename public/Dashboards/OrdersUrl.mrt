@@ -1,75 +1,95 @@
 {
-  "ReportVersion": "2025.1.5",
-  "ReportGuid": "02d584797003405787ed911f5fc6d526",
+  "ReportVersion": "2025.2.1.0",
+  "ReportGuid": "f8b5613f27454f4bbdded98b696504cd",
   "ReportName": "Orders",
   "ReportAlias": "Orders",
-  "ReportFile": "Orders.mrt",
   "ReportAuthor": "Stimulsoft",
-  "ReportCreated": "/Date(1529248458000+0300)/",
-  "ReportChanged": "/Date(1740554120000+0300)/",
+  "ReportCreated": "/Date(1529248458000+0200)/",
+  "ReportChanged": "/Date(1742575409064+0100)/",
   "EngineVersion": "EngineV2",
   "ReportUnit": "Inches",
-  "Culture": "en-US",
-  "DashboardViewerSettings": 254,
   "PreviewSettings": 268435455,
+  "DashboardViewerSettings": 254,
+  "Culture": "en-US",
+  "Script": "using System;\r\nusing System.Drawing;\r\nusing System.Windows.Forms;\r\nusing System.Data;\r\nusing Stimulsoft.Controls;\r\nusing Stimulsoft.Base.Drawing;\r\nusing Stimulsoft.Report;\r\nusing Stimulsoft.Report.Dialogs;\r\nusing Stimulsoft.Report.Components;\r\n\r\nnamespace Reports\r\n{\r\n    public class Orders : Stimulsoft.Report.StiReport\r\n    {\r\n        public Orders()        {\r\n            this.InitializeComponent();\r\n        }\r\n\r\n        #region StiReport Designer generated code - do not modify\r\n\t\t#endregion StiReport Designer generated code - do not modify\r\n    }\r\n}\r\n",
   "CalculationMode": "Interpretation",
+  "ReferencedAssemblies": {
+    "0": "System.Dll",
+    "1": "System.Drawing.Dll",
+    "2": "System.Windows.Forms.Dll",
+    "3": "System.Data.Dll",
+    "4": "System.Xml.Dll",
+    "5": "Stimulsoft.Controls.Dll",
+    "6": "Stimulsoft.Base.Dll",
+    "7": "Stimulsoft.Report.Dll"
+  },
   "Dictionary": {
     "DataSources": {
       "0": {
         "Ident": "StiDataTableSource",
         "Name": "Orders",
         "Alias": "Orders",
+        "Key": "82e5705d1794465aa13fe13654b043c8",
         "Columns": {
           "0": {
             "Name": "Estimated",
+            "Index": -1,
             "NameInSource": "Estimated",
             "Alias": "Estimated",
             "Type": "System.Decimal"
           },
           "1": {
             "Name": "NewCustomers",
+            "Index": -1,
             "NameInSource": "NewCustomers",
             "Alias": "NewCustomers",
             "Type": "System.Decimal"
           },
           "2": {
             "Name": "NewOrders",
+            "Index": -1,
             "NameInSource": "NewOrders",
             "Alias": "NewOrders",
             "Type": "System.Decimal"
           },
           "3": {
             "Name": "Real",
+            "Index": -1,
             "NameInSource": "Real",
             "Alias": "Real",
             "Type": "System.Decimal"
           },
           "4": {
             "Name": "RepeatPurchases",
+            "Index": -1,
             "NameInSource": "RepeatPurchases",
             "Alias": "RepeatPurchases",
             "Type": "System.Decimal"
           },
           "5": {
             "Name": "State",
+            "Index": -1,
             "NameInSource": "State",
             "Alias": "State",
             "Type": "System.String"
           },
           "6": {
             "Name": "TagetOrders",
+            "Index": -1,
             "NameInSource": "TagetOrders",
             "Alias": "TagetOrders",
             "Type": "System.Decimal"
           },
           "7": {
             "Name": "TargetCustomers",
+            "Index": -1,
             "NameInSource": "TargetCustomers",
             "Alias": "TargetCustomers",
             "Type": "System.Decimal"
           },
           "8": {
             "Name": "TargetRepeatPurchases",
+            "Index": -1,
             "NameInSource": "TargetRepeatPurchases",
             "Alias": "TargetRepeatPurchases",
             "Type": "System.Decimal"
@@ -83,8 +103,10 @@
         "Ident": "StiJsonDatabase",
         "Name": "Orders",
         "Alias": "Orders",
-        "PathData": "Orders.json",
-        "HeadersString": "YyoQVHvZXeyY3LY5ASN05g=="
+        "Key": "8a423b160b544e1da06678ac93195292",
+        "CastToColumnType": "LeaveUnprocessed",
+        "PathData": "Data/Orders.json",
+        "HeadersString": ""
       }
     }
   },
@@ -94,9 +116,6 @@
       "Name": "DashboardOrders",
       "Guid": "b542cc6f839d4e329b8a5540e975d460",
       "Alias": "Orders",
-      "Interaction": {
-        "Ident": "StiInteraction"
-      },
       "Brush": "solid:",
       "Components": {
         "0": {
@@ -104,24 +123,21 @@
           "Name": "Text1",
           "Guid": "56689f43239a4eedbbb8069be6cd9552",
           "ClientRectangle": "0,0,1200,40",
-          "Interaction": {
-            "Ident": "StiInteraction"
-          },
           "Border": ";;;;",
           "AltClientRectangle": "0,0,480,40",
           "AltTitleVisible": false,
+          "Text": "<font face=\"Segoe UI\" size=\"36\"><text-align=\"Center\">ORDERS STATS</text-align></font>",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;",
+          "Title": {
+            "Text": "Text",
+            "Visible": false
+          },
           "DashboardInteraction": {
             "Ident": "Text",
             "OnHover": "ShowToolTip",
             "OnClick": "OpenHyperlink",
             "HyperlinkDestination": "NewTab"
-          },
-          "Text": "<font face=\"Segoe UI\" size=\"36\"><text-align=\"Center\">ORDERS STATS</text-align></font>",
-          "CornerRadius": "0, 0, 0, 0",
-          "Shadow": ";;;",
-          "Title": {
-            "Text": "Text",
-            "Visible": false
           }
         },
         "1": {
@@ -129,9 +145,6 @@
           "Name": "RegionMap1",
           "Guid": "e91cbab2cd244f62a4be4260e66f922d",
           "ClientRectangle": "0,180,1200,420",
-          "Interaction": {
-            "Ident": "StiInteraction"
-          },
           "Border": ";;;;",
           "AltClientRectangle": "0,40,480,280",
           "DashboardInteraction": {
@@ -160,11 +173,11 @@
             "Key": "6c32a42afcfe41e0b5af0a460bd9f157",
             "Expression": "Orders.NewOrders"
           },
+          "MapIdent": "USA",
           "DataFrom": "DataColumns",
           "MapType": "Heatmap",
           "ShowName": "Short",
-          "MapIdent": "USA",
-          "CornerRadius": "0, 0, 0, 0",
+          "CornerRadius": "0,0,0,0",
           "Shadow": ";;;",
           "ValueFormat": {
             "Ident": "StiNumberFormatService",
@@ -179,11 +192,15 @@
           "Name": "Indicator1",
           "Guid": "a3922bf1d88c4dcab6802459a0e2472c",
           "ClientRectangle": "0,40,400,140",
-          "Interaction": {
-            "Ident": "StiInteraction"
-          },
           "Border": ";;;;",
           "AltClientRectangle": "0,320,480,160",
+          "DashboardInteraction": {
+            "Ident": "Indicator",
+            "OnHover": "ShowToolTip",
+            "OnClick": "None",
+            "HyperlinkDestination": "NewTab",
+            "AllowUserSorting": false
+          },
           "TextFormat": {
             "Ident": "StiNumberFormatService",
             "NegativePattern": 1,
@@ -193,8 +210,10 @@
           },
           "TargetFormat": {
             "Ident": "StiPercentageFormatService",
+            "NegativePattern": 1,
             "DecimalDigits": 2,
             "GroupSeparator": ",",
+            "PositivePattern": 1,
             "Symbol": "%"
           },
           "Value": {
@@ -213,26 +232,23 @@
             "HorAlignment": "Center"
           },
           "Icon": "CalendarCheckO",
-          "CornerRadius": "0, 0, 0, 0",
-          "Shadow": ";;;",
-          "DashboardInteraction": {
-            "Ident": "Indicator",
-            "OnHover": "ShowToolTip",
-            "OnClick": "None",
-            "HyperlinkDestination": "NewTab",
-            "AllowUserSorting": false
-          }
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;"
         },
         "3": {
           "Ident": "StiIndicatorElement",
           "Name": "Indicator2",
           "Guid": "ee05d51a084841c1b7870828c8dcdd46",
           "ClientRectangle": "800,40,400,140",
-          "Interaction": {
-            "Ident": "StiInteraction"
-          },
           "Border": ";;;;",
           "AltClientRectangle": "0,480,480,160",
+          "DashboardInteraction": {
+            "Ident": "Indicator",
+            "OnHover": "ShowToolTip",
+            "OnClick": "None",
+            "HyperlinkDestination": "NewTab",
+            "AllowUserSorting": false
+          },
           "TextFormat": {
             "Ident": "StiNumberFormatService",
             "NegativePattern": 1,
@@ -242,8 +258,10 @@
           },
           "TargetFormat": {
             "Ident": "StiPercentageFormatService",
+            "NegativePattern": 1,
             "DecimalDigits": 2,
             "GroupSeparator": ",",
+            "PositivePattern": 1,
             "Symbol": "%"
           },
           "Value": {
@@ -262,28 +280,22 @@
             "HorAlignment": "Center"
           },
           "Icon": "UserPlus",
-          "CornerRadius": "0, 0, 0, 0",
-          "Shadow": ";;;",
-          "DashboardInteraction": {
-            "Ident": "Indicator",
-            "OnHover": "ShowToolTip",
-            "OnClick": "None",
-            "HyperlinkDestination": "NewTab",
-            "AllowUserSorting": false
-          }
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;"
         },
         "4": {
           "Ident": "StiProgressElement",
           "Name": "Progress1",
           "Guid": "13bb0cb90dfb43bd826576b34e98edc4",
           "ClientRectangle": "400,40,400,140",
-          "Interaction": {
-            "Ident": "StiInteraction"
-          },
           "Border": ";;;;",
           "AltClientRectangle": "0,640,480,160",
-          "TextFormat": {
-            "Ident": "StiGeneralFormatService"
+          "DashboardInteraction": {
+            "Ident": "Progress",
+            "OnHover": "ShowToolTip",
+            "OnClick": "ApplyFilter",
+            "HyperlinkDestination": "NewTab",
+            "AllowUserSorting": false
           },
           "Value": {
             "Ident": "ValueProgressMeter",
@@ -300,20 +312,9 @@
             "Font": "Segoe UI;15.75;;",
             "HorAlignment": "Center"
           },
-          "Font": ";13;;",
-          "CornerRadius": "0, 0, 0, 0",
-          "Shadow": ";;;",
-          "DashboardInteraction": {
-            "Ident": "Progress",
-            "OnHover": "ShowToolTip",
-            "OnClick": "ApplyFilter",
-            "HyperlinkDestination": "NewTab",
-            "AllowUserSorting": false
-          }
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;"
         }
-      },
-      "Watermark": {
-        "TextBrush": "solid:50,0,0,0"
       },
       "Style": "Orange",
       "Border": ";;2;;;;;solid:Black",

@@ -22,9 +22,9 @@ export class UsingTheTwoViewerInTheOneProject {
 
     constructor() {
         this.report1 = new Stimulsoft.Report.StiReport();
-        this.report1.loadFile("Dashboard.mrt");
+        this.report1.loadFile("Dashboards/Dashboard.mrt");
 
         this.report2 = new Stimulsoft.Report.StiReport();
-        this.report2.loadFile("Orders.mrt");
+        this.report2.loadFile("Dashboards/Orders.mrt");
     }
 }

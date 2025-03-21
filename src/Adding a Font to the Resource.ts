@@ -13,9 +13,9 @@ export class AddingFontToTheResource {
 
     constructor() {
         this.report = new Stimulsoft.Report.StiReport();
-        this.report.loadFile("CusomFontDashboard.mrt");
+        this.report.loadFile("Dashboards/CusomFontDashboard.mrt");
 
-        var fileContent = Stimulsoft.System.IO.File.getFile("LongCang-Regular.ttf", true);
+        var fileContent = Stimulsoft.System.IO.File.getFile("Fonts/LongCang-Regular.ttf", true);
         var resource = new Stimulsoft.Report.Dictionary.StiResource("LongCang", "LongCang", false, Stimulsoft.Report.Dictionary.StiResourceType.FontTtf, fileContent);
         this.report.dictionary.resources.add(resource);
 

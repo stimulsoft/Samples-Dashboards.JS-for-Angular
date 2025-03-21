@@ -12,10 +12,10 @@ export class CreatingNewDataConnectionFromCode {
 
     constructor() {
         this.report = new Stimulsoft.Report.StiReport();
-        this.report.loadFile("Orders.mrt");
+        this.report.loadFile("Dashboards/Orders.mrt");
         this.report.dictionary.clear();
 
-        var database = new Stimulsoft.Report.Dictionary.StiJsonDatabase("Orders", "Orders.json");
+        var database = new Stimulsoft.Report.Dictionary.StiJsonDatabase("Orders", "Data/Orders.json");
         this.report.dictionary.databases.add(database);
         this.report.dictionary.synchronize();
     }

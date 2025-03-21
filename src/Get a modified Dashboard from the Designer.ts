@@ -18,7 +18,7 @@ export class GetModifiedDashboardFromTheDesigner {
 
     constructor() {
         this.report = new Stimulsoft.Report.StiReport();
-        this.report.loadFile("Dashboard.mrt");
+        this.report.loadFile("Dashboards/Dashboard.mrt");
 
         this.designerOptions = new Stimulsoft.Designer.StiDesignerOptions();
         this.designerOptions.appearance.fullScreenMode = true;
