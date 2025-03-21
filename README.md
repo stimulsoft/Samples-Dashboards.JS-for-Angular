@@ -6,44 +6,44 @@
 There is a set of examples for working with dashboard components:
 
 #### Localization and Globalization
-* [Localizing the Designer](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Localizing%20the%20Designer.ts)
-* [Localizing the Viewer](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Localizing%20the%20Viewer.ts)
-* [Globalizing Dashboard](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Globalizing%20Dashboard.ts)
+* [Localizing the Designer](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Localization%20and%20Globalization/Localizing%20the%20Designer.ts)
+* [Localizing the Viewer](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Localization%20and%20Globalization/Localizing%20the%20Viewer.ts)
+* [Globalizing Dashboard](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Localization%20and%20Globalization/Globalizing%20Dashboard.ts)
 
 #### Fonts and Resources
-* [Using a Custom Font](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Using%20a%20Custom%20Font.ts)
-* [Adding a Font to the Resource](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Adding%20a%20Font%20to%20the%20Resource.ts)
+* [Using a Custom Font](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Fonts%20and%20Resources/Using%20a%20Custom%20Font.ts)
+* [Adding a Font to the Resource](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Fonts%20and%20Resources/Adding%20a%20Font%20to%20the%20Resource.ts)
 
 #### Printing and Exporting
-* [Printing a Dashboard from Code](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Printing%20the%20Dashboard%20from%20Code.ts)
-* [Exporting a Dashboard to PDF](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Exporting%20a%20Dashboard%20to%20PDF.ts)
-* [Exporting a Dashboard to HTML](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Exporting%20a%20Dashboard%20to%20HTML.ts)
-* [Exporting a Dashboard from Code with Changing Export Settings](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Exporting%20a%20Dashboard%20from%20Code%20with%20Changing%20Export%20Settings.ts)
+* [Printing a Dashboard from Code](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Printing%20and%20Exporting/Printing%20the%20Dashboard%20from%20Code.ts)
+* [Exporting a Dashboard to PDF](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Printing%20and%20Exporting/Exporting%20a%20Dashboard%20to%20PDF.ts)
+* [Exporting a Dashboard to HTML](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Printing%20and%20Exporting/Exporting%20a%20Dashboard%20to%20HTML.ts)
+* [Exporting a Dashboard from Code with Changing Export Settings](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Printing%20and%20Exporting/Exporting%20a%20Dashboard%20from%20Code%20with%20Changing%20Export%20Settings.ts)
 
 #### Data Connection and Registration
-* [Creating a new Data Connection from code](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Creating%20a%20new%20Data%20Connection%20from%20code.ts)
-* [Registering Data from Code](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Registering%20Data%20from%20Code.ts)
-* [Using SQL Data Sources](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Using%20SQL%20Data%20Sources.ts)
-* [Using Parameters in SQL Query](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Using%20Parameters%20in%20SQL%20Query.ts)
-* [Using a Custom Data Adapter](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Using%20a%20Custom%20Data%20Adapter.ts)
-* [Supply Custom Headers for JSON Database](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Supply%20Custom%20Headers%20for%20JSON%20Database.ts)
+* [Creating a new Data Connection from code](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Data%20Connection%20and%20Registration/Creating%20a%20new%20Data%20Connection%20from%20code.ts)
+* [Registering Data from Code](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Data%20Connection%20and%20Registration/Registering%20Data%20from%20Code.ts)
+* [Using SQL Data Sources](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Data%20Connection%20and%20Registration/Using%20SQL%20Data%20Sources.ts)
+* [Using Parameters in SQL Query](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Data%20Connection%20and%20Registration/Using%20Parameters%20in%20SQL%20Query.ts)
+* [Using a Custom Data Adapter](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Data%20Connection%20and%20Registration/Using%20a%20Custom%20Data%20Adapter.ts)
+* [Supply Custom Headers for JSON Database](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Data%20Connection%20and%20Registration/Supply%20Custom%20Headers%20for%20JSON%20Database.ts)
 
 #### Working with Designer and Viewer Settings and Events
-* [Customizing the Designer](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Customizing%20the%20Designer.ts)
-* [Changing the Designer Theme](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Changing%20the%20Designer%20Theme.ts)
-* [Customizing the Viewer](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Customizing%20the%20Viewer.ts) 
-* [Changing the Viewer Theme](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Changing%20the%20Viewer%20Theme.ts)
-* [Using Designer Events](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Using%20Designer%20Events.ts)
-* [Using Viewer Events](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Using%20Viewer%20Events.ts)
-* [Working with onDesign and onExit Events](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Working%20with%20onDesign%20and%20onExit%20Events.ts)
-* [Using the two Viewer in the One Project](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Using%20the%20two%20Viewer%20in%20the%20One%20Project.ts)
-* [Get a modified Dashboard from the Designer](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Get%20a%20modified%20Dashboard%20from%20the%20Designer.ts)
-* [Using the Right-To-Left Mode in the Viewer](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Using%20the%20Right-To-Left%20Mode%20in%20the%20Viewer.ts)
+* [Customizing the Designer](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Working%20with%20Designer%20and%20Viewer%20Settings%20and%20Events/Customizing%20the%20Designer.ts)
+* [Changing the Designer Theme](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Working%20with%20Designer%20and%20Viewer%20Settings%20and%20Events/Changing%20the%20Designer%20Theme.ts)
+* [Customizing the Viewer](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Working%20with%20Designer%20and%20Viewer%20Settings%20and%20Events/Customizing%20the%20Viewer.ts) 
+* [Changing the Viewer Theme](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Working%20with%20Designer%20and%20Viewer%20Settings%20and%20Events/Changing%20the%20Viewer%20Theme.ts)
+* [Using Designer Events](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Working%20with%20Designer%20and%20Viewer%20Settings%20and%20Events/Using%20Designer%20Events.ts)
+* [Using Viewer Events](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Working%20with%20Designer%20and%20Viewer%20Settings%20and%20Events/Using%20Viewer%20Events.ts)
+* [Working with onDesign and onExit Events](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Working%20with%20Designer%20and%20Viewer%20Settings%20and%20Events/Working%20with%20onDesign%20and%20onExit%20Events.ts)
+* [Using the two Viewer in the One Project](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Working%20with%20Designer%20and%20Viewer%20Settings%20and%20Events/Using%20the%20two%20Viewer%20in%20the%20One%20Project.ts)
+* [Get a modified Dashboard from the Designer](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Working%20with%20Designer%20and%20Viewer%20Settings%20and%20Events/Get%20a%20modified%20Dashboard%20from%20the%20Designer.ts)
+* [Using the Right-To-Left Mode in the Viewer](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Working%20with%20Designer%20and%20Viewer%20Settings%20and%20Events/Using%20the%20Right-To-Left%20Mode%20in%20the%20Viewer.ts)
 
 #### Working with Dashboards, and Advanced Features
-* [How to Activate the Product](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/How%20to%20Activate%20the%20Product.ts)
-* [Using Dashboard Variables in Code](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Using%20Dashboard%20Variables%20in%20Code.ts)
-* [Creating Dashboard at Runtime](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Creating%20Dashboard%20at%20Runtime.ts)
+* [How to Activate the Product](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Working%20with%20Dashboards%20and%20Advanced%20Features/How%20to%20Activate%20the%20Product.ts)
+* [Using Dashboard Variables in Code](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Working%20with%20Dashboards%20and%20Advanced%20Features/Using%20Dashboard%20Variables%20in%20Code.ts)
+* [Creating Dashboard at Runtime](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Working%20with%20Dashboards%20and%20Advanced%20Features/Creating%20Dashboard%20at%20Runtime.ts)
 
 ## Running samples
 To run the examples, open the required folder with the example and run the following commands in the console:
