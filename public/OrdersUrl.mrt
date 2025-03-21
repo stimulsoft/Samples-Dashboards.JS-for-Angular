@@ -1,0 +1,323 @@
+{
+  "ReportVersion": "2025.1.5",
+  "ReportGuid": "02d584797003405787ed911f5fc6d526",
+  "ReportName": "Orders",
+  "ReportAlias": "Orders",
+  "ReportFile": "Orders.mrt",
+  "ReportAuthor": "Stimulsoft",
+  "ReportCreated": "/Date(1529248458000+0300)/",
+  "ReportChanged": "/Date(1740554120000+0300)/",
+  "EngineVersion": "EngineV2",
+  "ReportUnit": "Inches",
+  "Culture": "en-US",
+  "DashboardViewerSettings": 254,
+  "PreviewSettings": 268435455,
+  "CalculationMode": "Interpretation",
+  "Dictionary": {
+    "DataSources": {
+      "0": {
+        "Ident": "StiDataTableSource",
+        "Name": "Orders",
+        "Alias": "Orders",
+        "Columns": {
+          "0": {
+            "Name": "Estimated",
+            "NameInSource": "Estimated",
+            "Alias": "Estimated",
+            "Type": "System.Decimal"
+          },
+          "1": {
+            "Name": "NewCustomers",
+            "NameInSource": "NewCustomers",
+            "Alias": "NewCustomers",
+            "Type": "System.Decimal"
+          },
+          "2": {
+            "Name": "NewOrders",
+            "NameInSource": "NewOrders",
+            "Alias": "NewOrders",
+            "Type": "System.Decimal"
+          },
+          "3": {
+            "Name": "Real",
+            "NameInSource": "Real",
+            "Alias": "Real",
+            "Type": "System.Decimal"
+          },
+          "4": {
+            "Name": "RepeatPurchases",
+            "NameInSource": "RepeatPurchases",
+            "Alias": "RepeatPurchases",
+            "Type": "System.Decimal"
+          },
+          "5": {
+            "Name": "State",
+            "NameInSource": "State",
+            "Alias": "State",
+            "Type": "System.String"
+          },
+          "6": {
+            "Name": "TagetOrders",
+            "NameInSource": "TagetOrders",
+            "Alias": "TagetOrders",
+            "Type": "System.Decimal"
+          },
+          "7": {
+            "Name": "TargetCustomers",
+            "NameInSource": "TargetCustomers",
+            "Alias": "TargetCustomers",
+            "Type": "System.Decimal"
+          },
+          "8": {
+            "Name": "TargetRepeatPurchases",
+            "NameInSource": "TargetRepeatPurchases",
+            "Alias": "TargetRepeatPurchases",
+            "Type": "System.Decimal"
+          }
+        },
+        "NameInSource": "Orders.Orders"
+      }
+    },
+    "Databases": {
+      "0": {
+        "Ident": "StiJsonDatabase",
+        "Name": "Orders",
+        "Alias": "Orders",
+        "PathData": "Orders.json",
+        "HeadersString": "YyoQVHvZXeyY3LY5ASN05g=="
+      }
+    }
+  },
+  "Pages": {
+    "0": {
+      "Ident": "StiDashboard",
+      "Name": "DashboardOrders",
+      "Guid": "b542cc6f839d4e329b8a5540e975d460",
+      "Alias": "Orders",
+      "Interaction": {
+        "Ident": "StiInteraction"
+      },
+      "Brush": "solid:",
+      "Components": {
+        "0": {
+          "Ident": "StiTextElement",
+          "Name": "Text1",
+          "Guid": "56689f43239a4eedbbb8069be6cd9552",
+          "ClientRectangle": "0,0,1200,40",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;",
+          "AltClientRectangle": "0,0,480,40",
+          "AltTitleVisible": false,
+          "DashboardInteraction": {
+            "Ident": "Text",
+            "OnHover": "ShowToolTip",
+            "OnClick": "OpenHyperlink",
+            "HyperlinkDestination": "NewTab"
+          },
+          "Text": "<font face=\"Segoe UI\" size=\"36\"><text-align=\"Center\">ORDERS STATS</text-align></font>",
+          "CornerRadius": "0, 0, 0, 0",
+          "Shadow": ";;;",
+          "Title": {
+            "Text": "Text",
+            "Visible": false
+          }
+        },
+        "1": {
+          "Ident": "StiRegionMapElement",
+          "Name": "RegionMap1",
+          "Guid": "e91cbab2cd244f62a4be4260e66f922d",
+          "ClientRectangle": "0,180,1200,420",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;",
+          "AltClientRectangle": "0,40,480,280",
+          "DashboardInteraction": {
+            "Ident": "RegionMap",
+            "OnHover": "ShowToolTip",
+            "OnClick": "ApplyFilter",
+            "HyperlinkDestination": "NewTab"
+          },
+          "Title": {
+            "Text": "ORDERS by STATE",
+            "Font": "Segoe UI;15.75;;",
+            "HorAlignment": "Center"
+          },
+          "KeyMeter": {
+            "Ident": "KeyMapMeter",
+            "Key": "3a4d14e347bb4464b8ea21e7c9d7e81f",
+            "Expression": "Orders.State"
+          },
+          "NameMeter": {
+            "Ident": "NameMapMeter",
+            "Key": "9d617d4dd00047f8a3a6991acf5410e5",
+            "Expression": "Orders.State"
+          },
+          "ValueMeter": {
+            "Ident": "ValueMapMeter",
+            "Key": "6c32a42afcfe41e0b5af0a460bd9f157",
+            "Expression": "Orders.NewOrders"
+          },
+          "DataFrom": "DataColumns",
+          "MapType": "Heatmap",
+          "ShowName": "Short",
+          "MapIdent": "USA",
+          "CornerRadius": "0, 0, 0, 0",
+          "Shadow": ";;;",
+          "ValueFormat": {
+            "Ident": "StiNumberFormatService",
+            "NegativePattern": 1,
+            "DecimalDigits": 1,
+            "GroupSeparator": ",",
+            "State": "DecimalDigits, Abbreviation"
+          }
+        },
+        "2": {
+          "Ident": "StiIndicatorElement",
+          "Name": "Indicator1",
+          "Guid": "a3922bf1d88c4dcab6802459a0e2472c",
+          "ClientRectangle": "0,40,400,140",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;",
+          "AltClientRectangle": "0,320,480,160",
+          "TextFormat": {
+            "Ident": "StiNumberFormatService",
+            "NegativePattern": 1,
+            "DecimalDigits": 0,
+            "GroupSeparator": ",",
+            "State": "DecimalDigits"
+          },
+          "TargetFormat": {
+            "Ident": "StiPercentageFormatService",
+            "DecimalDigits": 2,
+            "GroupSeparator": ",",
+            "Symbol": "%"
+          },
+          "Value": {
+            "Ident": "ValueIndicatorMeter",
+            "Key": "4958efab5cbd4415af81e0bd386d9623",
+            "Expression": "Sum(Orders.NewOrders)"
+          },
+          "Target": {
+            "Ident": "TargetIndicatorMeter",
+            "Key": "fe0dafc3b47f472fbdb70d35d5765e2a",
+            "Expression": "Sum(Orders.TagetOrders)"
+          },
+          "Title": {
+            "Text": "ORDERS",
+            "Font": "Segoe UI;15.75;;",
+            "HorAlignment": "Center"
+          },
+          "Icon": "CalendarCheckO",
+          "CornerRadius": "0, 0, 0, 0",
+          "Shadow": ";;;",
+          "DashboardInteraction": {
+            "Ident": "Indicator",
+            "OnHover": "ShowToolTip",
+            "OnClick": "None",
+            "HyperlinkDestination": "NewTab",
+            "AllowUserSorting": false
+          }
+        },
+        "3": {
+          "Ident": "StiIndicatorElement",
+          "Name": "Indicator2",
+          "Guid": "ee05d51a084841c1b7870828c8dcdd46",
+          "ClientRectangle": "800,40,400,140",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;",
+          "AltClientRectangle": "0,480,480,160",
+          "TextFormat": {
+            "Ident": "StiNumberFormatService",
+            "NegativePattern": 1,
+            "DecimalDigits": 0,
+            "GroupSeparator": ",",
+            "State": "DecimalDigits"
+          },
+          "TargetFormat": {
+            "Ident": "StiPercentageFormatService",
+            "DecimalDigits": 2,
+            "GroupSeparator": ",",
+            "Symbol": "%"
+          },
+          "Value": {
+            "Ident": "ValueIndicatorMeter",
+            "Key": "9b875d97b5c249b1a7427884bc6f4997",
+            "Expression": "Sum(Orders.NewCustomers)"
+          },
+          "Target": {
+            "Ident": "TargetIndicatorMeter",
+            "Key": "5b60fad7e1bd45c2b664648ac2c403b5",
+            "Expression": "Sum(Orders.TargetCustomers)"
+          },
+          "Title": {
+            "Text": "NEW CUSTOMERS",
+            "Font": "Segoe UI;15.75;;",
+            "HorAlignment": "Center"
+          },
+          "Icon": "UserPlus",
+          "CornerRadius": "0, 0, 0, 0",
+          "Shadow": ";;;",
+          "DashboardInteraction": {
+            "Ident": "Indicator",
+            "OnHover": "ShowToolTip",
+            "OnClick": "None",
+            "HyperlinkDestination": "NewTab",
+            "AllowUserSorting": false
+          }
+        },
+        "4": {
+          "Ident": "StiProgressElement",
+          "Name": "Progress1",
+          "Guid": "13bb0cb90dfb43bd826576b34e98edc4",
+          "ClientRectangle": "400,40,400,140",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;",
+          "AltClientRectangle": "0,640,480,160",
+          "TextFormat": {
+            "Ident": "StiGeneralFormatService"
+          },
+          "Value": {
+            "Ident": "ValueProgressMeter",
+            "Key": "46882bbbb22244c2a56f63393623279e",
+            "Expression": "Sum(Orders.RepeatPurchases)"
+          },
+          "Target": {
+            "Ident": "TargetProgressMeter",
+            "Key": "5b3be09f11e34475a7bf28edafdec1b3",
+            "Expression": "Sum(Orders.TargetRepeatPurchases)"
+          },
+          "Title": {
+            "Text": "REPEAT PURCHASES",
+            "Font": "Segoe UI;15.75;;",
+            "HorAlignment": "Center"
+          },
+          "Font": ";13;;",
+          "CornerRadius": "0, 0, 0, 0",
+          "Shadow": ";;;",
+          "DashboardInteraction": {
+            "Ident": "Progress",
+            "OnHover": "ShowToolTip",
+            "OnClick": "ApplyFilter",
+            "HyperlinkDestination": "NewTab",
+            "AllowUserSorting": false
+          }
+        }
+      },
+      "Watermark": {
+        "TextBrush": "solid:50,0,0,0"
+      },
+      "Style": "Orange",
+      "Border": ";;2;;;;;solid:Black",
+      "AltSize": "480,800"
+    }
+  }
+}

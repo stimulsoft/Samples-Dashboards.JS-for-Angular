@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="Demo" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="Demo" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+        <xs:complexType>
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="Orders">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="State" type="xs:string" minOccurs="0" />
+                            <xs:element name="NewOrders" type="xs:decimal" />
+                            <xs:element name="TagetOrders" type="xs:decimal" />
+                            <xs:element name="NewCustomers" type="xs:decimal" />
+                            <xs:element name="TargetCustomers" type="xs:decimal" />
+                            <xs:element name="RepeatPurchases" type="xs:decimal" />
+                            <xs:element name="TargetRepeatPurchases" type="xs:decimal" />
+                            <xs:element name="Real" type="xs:decimal" />
+                            <xs:element name="Estimated" type="xs:decimal" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

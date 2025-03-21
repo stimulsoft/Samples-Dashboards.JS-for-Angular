@@ -1,0 +1,189 @@
+{
+  "ReportVersion": "2025.1.5",
+  "ReportGuid": "6f561cda4a61f5f5c235e9a675a31bb4",
+  "ReportName": "Report",
+  "ReportAlias": "Report",
+  "ReportFile": "CustomAdapter.mrt",
+  "ReportCreated": "/Date(1503884254000+0300)/",
+  "ReportChanged": "/Date(1740553547000+0300)/",
+  "EngineVersion": "EngineV2",
+  "ReportUnit": "Centimeters",
+  "CalculationMode": "Interpretation",
+  "Dictionary": {
+    "DataSources": {
+      "0": {
+        "Ident": "StiCustomSource",
+        "Name": "Table1",
+        "Alias": "Table1",
+        "Columns": {
+          "0": {
+            "Name": "Column1",
+            "NameInSource": "Column1",
+            "Alias": "Column1",
+            "Type": "System.String"
+          },
+          "1": {
+            "Name": "Column2",
+            "NameInSource": "Column2",
+            "Alias": "Column2",
+            "Type": "System.Decimal"
+          }
+        },
+        "NameInSource": "Connection",
+        "SqlCommand": "Table1",
+        "ServiceName": "MyDatabase"
+      },
+      "1": {
+        "Ident": "StiCustomSource",
+        "Name": "Table2",
+        "Alias": "Table2",
+        "Columns": {
+          "0": {
+            "Name": "Column1",
+            "NameInSource": "Column1",
+            "Alias": "Column1",
+            "Type": "System.String"
+          },
+          "1": {
+            "Name": "Column2",
+            "NameInSource": "Column2",
+            "Alias": "Column2",
+            "Type": "System.Decimal"
+          }
+        },
+        "NameInSource": "Connection",
+        "SqlCommand": "Table2",
+        "ServiceName": "MyDatabase"
+      }
+    },
+    "Databases": {
+      "0": {
+        "Ident": "StiCustomDatabase",
+        "Name": "Connection",
+        "Alias": "Connection",
+        "ConnectionStringEncrypted": "0W71ScVB2fFvWg==",
+        "ServiceName": "MyDatabase"
+      }
+    }
+  },
+  "Pages": {
+    "0": {
+      "Ident": "StiDashboard",
+      "Name": "Dashboard1",
+      "Guid": "b3b102aeb7ec97db399c9d70f0858c58",
+      "Interaction": {
+        "Ident": "StiInteraction"
+      },
+      "Brush": "solid:",
+      "Components": {
+        "0": {
+          "Ident": "StiTableElement",
+          "Name": "TableTable2",
+          "Guid": "33cb955e867018558edc563479902c76",
+          "ClientRectangle": "0,0,360,280",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;",
+          "Columns": {
+            "0": {
+              "Ident": "DimensionColumn",
+              "Key": "a065b2bf98751edda819b4375ccec8fe",
+              "Expression": "Table2.Column1",
+              "Label": "Column1",
+              "DashboardInteraction": {
+                "Ident": "TableColumn",
+                "OnHover": "None",
+                "OnClick": "None",
+                "HyperlinkDestination": "NewTab"
+              },
+              "Size": {
+                "MinWidth": 30,
+                "MaxWidth": 300
+              }
+            },
+            "1": {
+              "Ident": "MeasureColumn",
+              "Key": "9c6fe8f1f216a740caa096a0559a0537",
+              "Expression": "Sum(Table2.Column2)",
+              "Label": "Column2",
+              "HorAlignment": "Right",
+              "TextFormat": {
+                "Ident": "StiNumberFormatService",
+                "NegativePattern": 1,
+                "DecimalDigits": 2,
+                "GroupSeparator": ","
+              },
+              "ShowTotalSummary": true,
+              "DashboardInteraction": {
+                "Ident": "TableColumn",
+                "OnHover": "None",
+                "OnClick": "None",
+                "HyperlinkDestination": "NewTab"
+              }
+            }
+          },
+          "HeaderFont": ";10;;",
+          "FooterFont": ";10;;",
+          "Title": {
+            "Text": "Table2"
+          },
+          "DashboardInteraction": {
+            "Ident": "Table",
+            "OnHover": "ShowToolTip",
+            "OnClick": "ApplyFilter",
+            "HyperlinkDestination": "NewTab"
+          },
+          "CornerRadius": "0, 0, 0, 0",
+          "Shadow": ";;;"
+        },
+        "1": {
+          "Ident": "StiIndicatorElement",
+          "Name": "IndicatorElement1",
+          "Guid": "ac3071411f14be7c0810c0a97d8976a0",
+          "ClientRectangle": "360,0,300,280",
+          "Interaction": {
+            "Ident": "StiInteraction"
+          },
+          "Border": ";;;;",
+          "TextFormat": {
+            "Ident": "StiGeneralFormatService"
+          },
+          "TargetFormat": {
+            "Ident": "StiPercentageFormatService",
+            "DecimalDigits": 2,
+            "GroupSeparator": ",",
+            "Symbol": "%"
+          },
+          "Value": {
+            "Ident": "ValueIndicatorMeter",
+            "Key": "a108b385451c75d2f6c23a9b9ac92912",
+            "Expression": "Sum(Table1.Column2)",
+            "Label": "Column2"
+          },
+          "Series": {
+            "Ident": "SeriesIndicatorMeter",
+            "Key": "8ba6062d63d7e37e83f92e85136be646",
+            "Expression": "Table1.Column1",
+            "Label": "Column1"
+          },
+          "Title": {
+            "Text": "Indicator"
+          },
+          "CornerRadius": "0, 0, 0, 0",
+          "Shadow": ";;;",
+          "DashboardInteraction": {
+            "Ident": "Indicator",
+            "OnHover": "ShowToolTip",
+            "OnClick": "None",
+            "HyperlinkDestination": "NewTab"
+          }
+        }
+      },
+      "Watermark": {
+        "TextBrush": "solid:50,0,0,0"
+      },
+      "Border": ";;2;;;;;solid:Black"
+    }
+  }
+}
