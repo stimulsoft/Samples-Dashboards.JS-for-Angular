@@ -28,7 +28,7 @@ There is a set of examples for working with dashboard components:
 * [Using a Custom Data Adapter](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Using%20a%20Custom%20Data%20Adapter.ts)
 * [Supply Custom Headers for JSON Database](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Supply%20Custom%20Headers%20for%20JSON%20Database.ts)
 
-#### Working with Viewer Settings and Events
+#### Working with Designer and Viewer Settings and Events
 * [Customizing the Designer](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Customizing%20the%20Designer.ts)
 * [Changing the Designer Theme](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Changing%20the%20Designer%20Theme.ts)
 * [Customizing the Viewer](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Customizing%20the%20Viewer.ts) 
