@@ -1,6 +1,6 @@
 # Angular samples for Stimulsoft Dashboards.JS
 
-#### This repository contains the source code of the examples of usage Stimulsoft Dashboards.JS data visualization tool in the Angular applications, using JavaScript code and Angular embedded components. The data analysis tool and examples are fully compatible with all Angular versions and AngularJS framework.
+#### This repository contains the source code of the examples of usage Stimulsoft Dashboards.JS data visualization tool in the Angular applications, using JavaScript code and Angular embedded components.
 
 ## Overview
 There is a set of examples for working with dashboard components:
@@ -43,7 +43,7 @@ There is a set of examples for working with dashboard components:
 To run the examples, open the required folder with the example and run the following commands in the console:
 * run `npm install` to install all required module;
 * run `npm start` to compile the application;
-* navigate to `http://localhost:3000/` for AngularJS or `http://localhost:4200/` for Angular.
+* navigate to `http://localhost:4200/` for Angular.
 
 ## Connect to SQL databases
 Since pure JavaScript does not have built-in methods for working with remote databases, this functionality is implemented using server-side code. Therefore, Stimulsoft Dashboards.JS product contains server data adapters implemented using PHP, Node.js, ASP.NET, Java, .NET Core technologies.
