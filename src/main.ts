@@ -33,9 +33,9 @@ import { UsingTheTwoViewerInTheOneProject } from './Working with Designer and Vi
 import { GetModifiedDashboardFromTheDesigner } from './Working with Designer and Viewer Settings and Events/Get a modified Dashboard from the Designer';
 import { UsingTheRightToLeftModeInTheViewer } from './Working with Designer and Viewer Settings and Events/Using the Right-To-Left Mode in the Viewer';
 
-import { HowToActivateTheProduct } from './Working with Dashboards, and Advanced Features/How to Activate the Product';
-import { UsingDashboardVariablesInCode } from './Working with Dashboards, and Advanced Features/Using Dashboard Variables in Code';
-import { CreatingDashboardAtRuntime } from './Working with Dashboards, and Advanced Features/Creating Dashboard at Runtime';
+import { HowToActivateTheProduct } from './Working with Dashboards and Advanced Features/How to Activate the Product';
+import { UsingDashboardVariablesInCode } from './Working with Dashboards and Advanced Features/Using Dashboard Variables in Code';
+import { CreatingDashboardAtRuntime } from './Working with Dashboards and Advanced Features/Creating Dashboard at Runtime';
 
 import { ListSamples } from './ListSamples'
 
