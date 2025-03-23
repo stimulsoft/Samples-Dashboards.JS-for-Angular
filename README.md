@@ -40,7 +40,7 @@ There is a set of examples for working with dashboard components:
 * [Get a modified Dashboard from the Designer](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Working%20with%20Designer%20and%20Viewer%20Settings%20and%20Events/Get%20a%20modified%20Dashboard%20from%20the%20Designer.ts)
 * [Using the Right-To-Left Mode in the Viewer](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Working%20with%20Designer%20and%20Viewer%20Settings%20and%20Events/Using%20the%20Right-To-Left%20Mode%20in%20the%20Viewer.ts)
 
-#### Working with Dashboards, and Advanced Features
+#### Working with Dashboards and Advanced Features
 * [How to Activate the Product](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Working%20with%20Dashboards%20and%20Advanced%20Features/How%20to%20Activate%20the%20Product.ts)
 * [Using Dashboard Variables in Code](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Working%20with%20Dashboards%20and%20Advanced%20Features/Using%20Dashboard%20Variables%20in%20Code.ts)
 * [Creating Dashboard at Runtime](https://github.com/stimulsoft/Samples-Dashboards.JS-for-Angular/blob/main/src/Working%20with%20Dashboards%20and%20Advanced%20Features/Creating%20Dashboard%20at%20Runtime.ts)

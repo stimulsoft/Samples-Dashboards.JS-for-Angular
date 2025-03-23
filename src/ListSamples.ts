@@ -95,7 +95,7 @@ import { RouterLink } from '@angular/router';
                     <a routerLink="/Using_the_Right-To-Left_Mode_in_the_Viewer">Using the Right-To-Left Mode in the Viewer</a>
                 </li>
             </ul>
-            Working with Dashboards, and Advanced Features
+            Working with Dashboards and Advanced Features
             <ul>
                 <li>
                     <a routerLink="/How_to_Activate_the_Product">How to Activate the Product</a>
