@@ -4,10 +4,15 @@ import { Stimulsoft } from "stimulsoft-dashboards-js-angular";
 @Component({
     selector: "printing-the-dashboard-from-code",
     template: `
-        <div>
-            <button (click)="printPdf_Click()">Print Dashboard as PDF</button>
-            <button (click)="printHtml_Click()">Print Dashboard as HTML</button>
+        <div class="container">
+            <h4>This sample demonstrates how to print a dashboard:</h4>
+            <div class="container-button">
+                <button (click)="printPdf_Click()" class="button" title="Print Dashboard as PDF File">Print PDF</button>
+                <button (click)="printHtml_Click()" class="button" title="Print Dashboard as HTML File">Print HTML</button>
+            </div>
         </div>`
+        ,
+    styleUrls: ['../styles.css']
 })
 
 export class PrintingTheDashboardFromCode {

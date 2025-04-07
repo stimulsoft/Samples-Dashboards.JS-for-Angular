@@ -5,15 +5,15 @@ import { Viewer, Stimulsoft } from "stimulsoft-dashboards-js-angular/viewer";
     selector: "using-the-two-viewer-in-the-one-project",
     imports: [Viewer],
     template: `
-        <div>
-            <div [style]="{ width: '50%', display: 'inline-block'}">
+        <div class="container">
+            <h4>This sample demonstrates how to add two viewers to one page:</h4>
+            <div class="container-viewer">
                 <sti-viewer [report]="report1"></sti-viewer>
-            </div>
-            <div [style]="{ width: '50%', display: 'inline-block'}">
                 <sti-viewer [report]="report2"></sti-viewer>
             </div>
         </div>
-    `
+    `,
+    styleUrls: ['../styles.css']
 })
 
 export class UsingTheTwoViewerInTheOneProject {

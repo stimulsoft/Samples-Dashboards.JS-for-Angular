@@ -5,11 +5,16 @@ import { Viewer, Stimulsoft } from "stimulsoft-dashboards-js-angular/viewer";
     selector: "registering-data-from-code",
     imports: [Viewer],
     template: `
-        <div>
-            <button (click)="buttonXmlClick()">Register XML Data</button>
-            <button (click)="buttonJsonClick()">Register JSON Data</button>
-            <sti-viewer [report]="report" ></sti-viewer>
-        </div>`
+        <div class="container">
+            <div class="container-button">
+                <button (click)="buttonXmlClick()" class="button" title="Using regData() method for registering XML data">Register XML Data</button>
+                <button (click)="buttonJsonClick()" class="button" title="Using regData() method for registering JSON data">Register JSON Data</button>
+            </div>
+            <div>
+                <sti-viewer [report]="report"></sti-viewer>
+            </div>
+        </div>`,
+    styleUrls: ['../styles.css']
 })
 
 export class RegisteringDataFromCode {

@@ -5,17 +5,20 @@ import { Viewer, Stimulsoft } from "stimulsoft-dashboards-js-angular/viewer";
     selector: "globalizing-dashboard",
     imports: [Viewer],
     template: `
-        <div>
-            <label [style]="{fontSize: '14px'}">
-                    Select Country
-                <select (change)="update($event.target)">
-                    <option [value]="'en-US'">United States</option>
-                    <option [value]="'de-DE'">Germany</option>
-                    <option [value]="'ru-RU'">Russia</option>
+        <div class="container">
+            <div class="container-control">
+                <label class="label-globalization">Select Language</label>
+                <select (change)="update($event.target)" class="select-globalization">
+                        <option [value]="'en-US'">English</option>
+                        <option [value]="'de-DE'">Deutsch</option>
+                        <option [value]="'ru-RU'">Russian</option>
                 </select>
-            </label>
-            <sti-viewer [report]="report" [options]="viewerOptions"></sti-viewer>/>
-        </div>`
+            </div>
+            <div>
+                <sti-viewer [report]="report" [options]="viewerOptions"></sti-viewer>
+            </div>
+        </div>`,
+        styleUrls: ['../styles.css']
 })
 
 export class GlobalizingDashboard {

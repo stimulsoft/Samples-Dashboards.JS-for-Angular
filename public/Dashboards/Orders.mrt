@@ -1,25 +1,34 @@
 {
-  "ReportVersion": "2025.1.5",
-  "ReportGuid": "02d584797003405787ed911f5fc6d526",
+  "ReportVersion": "2025.2.2.0",
+  "ReportGuid": "210fa014d57c439fadd84128ceead7db",
   "ReportName": "Orders",
   "ReportAlias": "Orders",
-  "ReportFile": "Orders.mrt",
   "ReportAuthor": "Stimulsoft",
-  "ReportCreated": "/Date(1529248458000+0300)/",
-  "ReportChanged": "/Date(1740553383000+0300)/",
+  "ReportCreated": "/Date(1529248458000+0200)/",
+  "ReportChanged": "/Date(1744041556366+0200)/",
   "EngineVersion": "EngineV2",
   "ReportUnit": "Inches",
+  "PreviewSettings": 134168575,
   "Culture": "en-US",
-  "DashboardViewerSettings": 254,
-  "PreviewSettings": 268435455,
+  "Script": "using System;\r\nusing System.Drawing;\r\nusing System.Windows.Forms;\r\nusing System.Data;\r\nusing Stimulsoft.Controls;\r\nusing Stimulsoft.Base.Drawing;\r\nusing Stimulsoft.Report;\r\nusing Stimulsoft.Report.Dialogs;\r\nusing Stimulsoft.Report.Components;\r\n\r\nnamespace Reports\r\n{\r\n    public class Orders : Stimulsoft.Report.StiReport\r\n    {\r\n        public Orders()        {\r\n            this.InitializeComponent();\r\n        }\r\n\r\n        #region StiReport Designer generated code - do not modify\r\n\t\t#endregion StiReport Designer generated code - do not modify\r\n    }\r\n}\r\n",
   "CalculationMode": "Interpretation",
+  "ReferencedAssemblies": {
+    "0": "System.Dll",
+    "1": "System.Drawing.Dll",
+    "2": "System.Windows.Forms.Dll",
+    "3": "System.Data.Dll",
+    "4": "System.Xml.Dll",
+    "5": "Stimulsoft.Controls.Dll",
+    "6": "Stimulsoft.Base.Dll",
+    "7": "Stimulsoft.Report.Dll"
+  },
   "Dictionary": {
     "Resources": {
       "0": {
         "Name": "Orders",
         "Alias": "Orders",
         "Type": "Json",
-        "Image": "piEuj9bjWfSvozZfJAvJ0o+Tik2xRdMKjnc9WubNqGhlvqBYpe9qf1wmJP68hjMdYH2FmxUmRtPr8HO19HFO6zn4KFLmZ6VfOrwgSM6K/Y4Q8B8Ztm6BDuZf1Z5Ih1T5NC3qO78OwFR/JmosgN4ndTXUpAWAJR2OHzx/zPCp1ia4sWorEL0hl13+MHnRTnzhuYRFCqa0t9YnwbTg1zAZcy12HEF2qzxQk5QoSPfqvqgb9TCnnlYza/Z1882uQjM95U3i6hB8+l2YnS2ndg3qj8cWsEmKt1KccMiFtLhGgREtDeFWLG3qvYrGE4UysbEWmSZokKdunhTHm74M2HDCvYj+2Pwxg+PlX01OthIwMaB8yVJfObdcKfrkPNsqTgTxNBAl1jwemv+2/F26ybjP5zs/nFO+TW0U+kbx2iHmW/mcLH81EiD12lLqHo3MNETea13ks/PvwQXzKrIAvzyPLBJ6ZplXWJ89cR/08OIYVN7SLP5nTiPWRchkWl3wQK2VGdTiwQrQRos/fmX6XmoMnHAgudMmz8PNjoDg1gSr/xhZ5OL2pADMU8Oh92mfr0s2oTH0+d2D7pwsi2noKWLR1GA0O9dQf6lslIJL92hrSzhpmAv3sfjQZRp6KGqcYsrG9RxdK3uKiufLy6Gnzs3QXRXQVVyHeIYzkifvSPyjc2UPwongc0Qs9OOTrp7JSYd6aOEYz4+qUfXeFJilfO5quq4k3MldTDzvrCWnNiLL8Rtq/30EfhcCsSk5HmagLs5RxT3MhnTxOZ50EcZfGeucriia21O4/RmurESFigw5SxSEhtWHB7C//FhnxNQcQQJJ91aqthBmlWdYwgc18tT/kIq/ZbjWQuQgsBMxRYIPhru0SD8XP++J0d8a9JHIvTbdNgCXtoQiU4nbnnPLtwBlCx7a2N6e3G+1OJaC6UMLO/s8wqVL+iY3qmvr4xBv3uEbGNelZYX/b0tuHdTFW6Oj39tZLtOZ7hKTE0xrVYT/o+8u2XOD2EPwqiBZALGdH/bu9nU+yEkV4NEsyoqSebPzHYP+9ZbkEDmIV37HMHusq1EvkRa8nRG+qdNb8XMcbajYtrvWJW1ZncJ+DRQ39pXgT6ONtzSkrd6JIzidDCqC8OAnEl+PSHXtpc9T3oddLGeT6thJKQUsd2Yqg0ezqiGdJ0MiP9yIafQlsN8kHC9iO0k5C/vFOxETUGv2zxx2ZqG4pmlFhlt0cEP0k8AidP4XpI5m7Pvbloc93p7hqN5SzI3yltEeoo3cT3cV7LgLpChAEewgC8P2MHAfQ3wtxvgo7JgehKU8EATIe29VKAIr6+lRw0V/+Xq9DdLsGewe7vVrJYvPR//ON7wo8iBmlYcCoWPqw4dabCO+8A4akMUddCSvRPd3/srOgZVV3ARQtQtjecJpdMnk6FOILnwbwwtiH9h48vRnFoy9qMuAdmdiMCmp/QcXa2IrCDZs2inNFCV2ipmV+/FfkoLblUoRC3LbLhSuJRjLowONQdVWF+ERKY+1pbx8rV7R2IbCMnM6eqIhuUPV2YD7LozcuwRGRd5h+2Bxr7KfcLpx4Dh+SkTjbVTCW0XqTgkw4njq5OQyp5E="
+        "Image": "qrxgEuDfmAKLyza+7gutNIKbipQ672x/BLFRUUFIemjBuYbFzSrv1jGKOlTb6rWOvkTHQDIRTkJ+C8TLGn3o2Db5DdaqP3MWK7yUyHvCCxrGmsitVHEMazaNhGV1k0wJCvvYbPTEF5hWikrf44io9pdy8AV8MjOOoKO+6OLjrG+pg8r8kB7il9veTJ5/9dczUNqkZ3TWTlHXZ09mANSyk5NOaPc8Gdkt0pcInqmSXQAjiU141JnDC4PmEaI/eybciT+lArh7qLEVKAn+rJR3bDr44IVKV2IUszQVXr0E/bftWAeJwdgVOCzVE+UUfqM1SRkwHaTDhdK8CxhNM+4DKCDYY+WoUGCnrE2i1jOlwMsR/sS3TGaMNH+LBqe/8EzJt6ev0o6k8sL7w+METU+OWqRwowZNQwW5/RIlffKwbUsfwJwtKYvV1t/FHu7NMvWE/ki6+1r3FyTSZSpEtLYGkz+URbNVqca88osZezXrSzrzCwxFpoqez9zxX/lLBOILAjEYkLt3NprdBHkGnGpBpdk6oh80uMfMjlEa9gmBeV87Jd3ZgN8bfASawM7KWdOPwPAW/8R97bQ8EnD+tdmerNpjo2OWMK4PYg8mcYNOfg9L1NuNDEt3imGk54ZguXByGxiWnv5heJoiNLsPDcI8mkn7xTlbWPgzwJnmVFJ987amzTkaI0QsGONcBub3Rah2KOse46rMFoIsSTJR5UIIuufdwH+6BZ5HFFITo3Mw9BsOnjUC1P5I6loC6oPJJDC/HU0op9D/py0krhevcgVYZIaSS4odtnDphX5nZiaWx4bByqNjvEGfgmqApLBTdfeLJU2PgOgB6lUHDFSMN0LZCC3R1bkloSalvBPm9L+2al46bO+/Re8CfZQM40Q3wOR06/uevtmgRyKF5jrUnS5FBS99fZ8PFdrgEWGt4UQ6BS7iAAASlUMrBkgWqepvGGhiNw+watnCxHJBdOSsV/PhqRtM4Q1UctgaAamGK44cn5oM2YxCMWXwekR+4pFQI+BJbNiwVKzXd1RwQIrCJMYrTbDL71KvBPCUiRrHdN9bQ+QV4Uy4yi5egadbN1aDprMwtM7DiDZct8VJs7SpVmdhM3KNaxXJZzJfjyRyp9YTtocl7ENX5W2SiS7kru8Nqyc+bqVSEvaD2+tE9ctFLwqFVMsDTqzshp/iqDDH2YT/1IHX6mMd9Fd9TS9NqpNRc47OAidFKrZ4dD4fnuV3TuKOXFcsG/XybXeyj7Ja/izVPLPSixG3pIsWowb5yTQcQ29KfPyJzteLJtFoVLI6esquwbRMqzzp/RxRZjolA3CMTCpt1Ilk0dWIrYg52AC80MtzdO2PgFYq5tgoRp6ZoLsK1HcIA7t3HnoFALRGfP3GCjwZJMFtfPVEnOKzwACld413O0C8pbkLg/NIbt46kQskB3hf676aisaEjx7b6T0S4VU+Ej9pvI4kI8JKXnWGSOzIy6kWkZRZAv8K5pr6erUyTohP3ECgVKhFeokantYGrXkasH8abYrCR/1khEB/tVR3lZULs+ZEk8bQKZErZ/TLKrz9XlJksI232dxs9jTOIfBdti+s1oAwO60WkdieV/cW"
       }
     },
     "DataSources": {
@@ -27,57 +36,67 @@
         "Ident": "StiDataTableSource",
         "Name": "Orders",
         "Alias": "Orders",
+        "Key": "639942dbb3414a89a0d5a831613bb999",
         "Columns": {
           "0": {
             "Name": "Estimated",
+            "Index": -1,
             "NameInSource": "Estimated",
             "Alias": "Estimated",
             "Type": "System.Decimal"
           },
           "1": {
             "Name": "NewCustomers",
+            "Index": -1,
             "NameInSource": "NewCustomers",
             "Alias": "NewCustomers",
             "Type": "System.Decimal"
           },
           "2": {
             "Name": "NewOrders",
+            "Index": -1,
             "NameInSource": "NewOrders",
             "Alias": "NewOrders",
             "Type": "System.Decimal"
           },
           "3": {
             "Name": "Real",
+            "Index": -1,
             "NameInSource": "Real",
             "Alias": "Real",
             "Type": "System.Decimal"
           },
           "4": {
             "Name": "RepeatPurchases",
+            "Index": -1,
             "NameInSource": "RepeatPurchases",
             "Alias": "RepeatPurchases",
             "Type": "System.Decimal"
           },
           "5": {
             "Name": "State",
+            "Index": -1,
             "NameInSource": "State",
             "Alias": "State",
             "Type": "System.String"
           },
           "6": {
             "Name": "TagetOrders",
+            "Index": -1,
             "NameInSource": "TagetOrders",
             "Alias": "TagetOrders",
             "Type": "System.Decimal"
           },
           "7": {
             "Name": "TargetCustomers",
+            "Index": -1,
             "NameInSource": "TargetCustomers",
             "Alias": "TargetCustomers",
             "Type": "System.Decimal"
           },
           "8": {
             "Name": "TargetRepeatPurchases",
+            "Index": -1,
             "NameInSource": "TargetRepeatPurchases",
             "Alias": "TargetRepeatPurchases",
             "Type": "System.Decimal"
@@ -91,8 +110,9 @@
         "Ident": "StiJsonDatabase",
         "Name": "Orders",
         "Alias": "Orders",
+        "CastToColumnType": "LeaveUnprocessed",
         "PathData": "resource://Orders",
-        "HeadersString": "YyoQVHvZXeyY3LY5ASN05g=="
+        "HeadersString": ""
       }
     }
   },
@@ -102,9 +122,6 @@
       "Name": "DashboardOrders",
       "Guid": "b542cc6f839d4e329b8a5540e975d460",
       "Alias": "Orders",
-      "Interaction": {
-        "Ident": "StiInteraction"
-      },
       "Brush": "solid:",
       "Components": {
         "0": {
@@ -112,24 +129,21 @@
           "Name": "Text1",
           "Guid": "56689f43239a4eedbbb8069be6cd9552",
           "ClientRectangle": "0,0,1200,40",
-          "Interaction": {
-            "Ident": "StiInteraction"
-          },
           "Border": ";;;;",
           "AltClientRectangle": "0,0,480,40",
           "AltTitleVisible": false,
+          "Text": "<font face=\"Segoe UI\" size=\"36\"><text-align=\"Center\">ORDERS STATS</text-align></font>",
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;",
+          "Title": {
+            "Text": "Text",
+            "Visible": false
+          },
           "DashboardInteraction": {
             "Ident": "Text",
             "OnHover": "ShowToolTip",
             "OnClick": "OpenHyperlink",
             "HyperlinkDestination": "NewTab"
-          },
-          "Text": "<font face=\"Segoe UI\" size=\"36\"><text-align=\"Center\">ORDERS STATS</text-align></font>",
-          "CornerRadius": "0, 0, 0, 0",
-          "Shadow": ";;;",
-          "Title": {
-            "Text": "Text",
-            "Visible": false
           }
         },
         "1": {
@@ -137,9 +151,6 @@
           "Name": "RegionMap1",
           "Guid": "e91cbab2cd244f62a4be4260e66f922d",
           "ClientRectangle": "0,180,1200,420",
-          "Interaction": {
-            "Ident": "StiInteraction"
-          },
           "Border": ";;;;",
           "AltClientRectangle": "0,40,480,280",
           "DashboardInteraction": {
@@ -168,11 +179,11 @@
             "Key": "6c32a42afcfe41e0b5af0a460bd9f157",
             "Expression": "Orders.NewOrders"
           },
+          "MapIdent": "USA",
           "DataFrom": "DataColumns",
           "MapType": "Heatmap",
           "ShowName": "Short",
-          "MapIdent": "USA",
-          "CornerRadius": "0, 0, 0, 0",
+          "CornerRadius": "0,0,0,0",
           "Shadow": ";;;",
           "ValueFormat": {
             "Ident": "StiNumberFormatService",
@@ -187,11 +198,15 @@
           "Name": "Indicator1",
           "Guid": "a3922bf1d88c4dcab6802459a0e2472c",
           "ClientRectangle": "0,40,400,140",
-          "Interaction": {
-            "Ident": "StiInteraction"
-          },
           "Border": ";;;;",
           "AltClientRectangle": "0,320,480,160",
+          "DashboardInteraction": {
+            "Ident": "Indicator",
+            "OnHover": "ShowToolTip",
+            "OnClick": "None",
+            "HyperlinkDestination": "NewTab",
+            "AllowUserSorting": false
+          },
           "TextFormat": {
             "Ident": "StiNumberFormatService",
             "NegativePattern": 1,
@@ -201,8 +216,10 @@
           },
           "TargetFormat": {
             "Ident": "StiPercentageFormatService",
+            "NegativePattern": 1,
             "DecimalDigits": 2,
             "GroupSeparator": ",",
+            "PositivePattern": 1,
             "Symbol": "%"
           },
           "Value": {
@@ -221,26 +238,23 @@
             "HorAlignment": "Center"
           },
           "Icon": "CalendarCheckO",
-          "CornerRadius": "0, 0, 0, 0",
-          "Shadow": ";;;",
-          "DashboardInteraction": {
-            "Ident": "Indicator",
-            "OnHover": "ShowToolTip",
-            "OnClick": "None",
-            "HyperlinkDestination": "NewTab",
-            "AllowUserSorting": false
-          }
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;"
         },
         "3": {
           "Ident": "StiIndicatorElement",
           "Name": "Indicator2",
           "Guid": "ee05d51a084841c1b7870828c8dcdd46",
           "ClientRectangle": "800,40,400,140",
-          "Interaction": {
-            "Ident": "StiInteraction"
-          },
           "Border": ";;;;",
           "AltClientRectangle": "0,480,480,160",
+          "DashboardInteraction": {
+            "Ident": "Indicator",
+            "OnHover": "ShowToolTip",
+            "OnClick": "None",
+            "HyperlinkDestination": "NewTab",
+            "AllowUserSorting": false
+          },
           "TextFormat": {
             "Ident": "StiNumberFormatService",
             "NegativePattern": 1,
@@ -250,8 +264,10 @@
           },
           "TargetFormat": {
             "Ident": "StiPercentageFormatService",
+            "NegativePattern": 1,
             "DecimalDigits": 2,
             "GroupSeparator": ",",
+            "PositivePattern": 1,
             "Symbol": "%"
           },
           "Value": {
@@ -270,28 +286,22 @@
             "HorAlignment": "Center"
           },
           "Icon": "UserPlus",
-          "CornerRadius": "0, 0, 0, 0",
-          "Shadow": ";;;",
-          "DashboardInteraction": {
-            "Ident": "Indicator",
-            "OnHover": "ShowToolTip",
-            "OnClick": "None",
-            "HyperlinkDestination": "NewTab",
-            "AllowUserSorting": false
-          }
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;"
         },
         "4": {
           "Ident": "StiProgressElement",
           "Name": "Progress1",
           "Guid": "13bb0cb90dfb43bd826576b34e98edc4",
           "ClientRectangle": "400,40,400,140",
-          "Interaction": {
-            "Ident": "StiInteraction"
-          },
           "Border": ";;;;",
           "AltClientRectangle": "0,640,480,160",
-          "TextFormat": {
-            "Ident": "StiGeneralFormatService"
+          "DashboardInteraction": {
+            "Ident": "Progress",
+            "OnHover": "ShowToolTip",
+            "OnClick": "ApplyFilter",
+            "HyperlinkDestination": "NewTab",
+            "AllowUserSorting": false
           },
           "Value": {
             "Ident": "ValueProgressMeter",
@@ -308,20 +318,9 @@
             "Font": "Segoe UI;15.75;;",
             "HorAlignment": "Center"
           },
-          "Font": ";13;;",
-          "CornerRadius": "0, 0, 0, 0",
-          "Shadow": ";;;",
-          "DashboardInteraction": {
-            "Ident": "Progress",
-            "OnHover": "ShowToolTip",
-            "OnClick": "ApplyFilter",
-            "HyperlinkDestination": "NewTab",
-            "AllowUserSorting": false
-          }
+          "CornerRadius": "0,0,0,0",
+          "Shadow": ";;;"
         }
-      },
-      "Watermark": {
-        "TextBrush": "solid:50,0,0,0"
       },
       "Style": "Orange",
       "Border": ";;2;;;;;solid:Black",

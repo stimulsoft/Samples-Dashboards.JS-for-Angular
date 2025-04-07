@@ -4,9 +4,14 @@ import { Stimulsoft } from "stimulsoft-dashboards-js-angular";
 @Component({
     selector: "exporting-dashboard-from-code-with-changing-export-settings",
     template: `
-        <div>
-            <button (click)="saveDashboardPdf()">Export and Save PDF dashboard to file</button>
-        </div>`
+        <div class="container">
+            <h4>This example shows how to export a dashboard to a PDF file and adjust the export settings via code:</h4>
+            <div class="container-button">
+                <button (click)="saveDashboardPdf()" class="button" title="Export Dashboard to PDF File">Export to PDF</button>
+            </div>
+        </div>
+        `,
+    styleUrls: ['../styles.css']
 })
 
 export class ExportingDashboardFromCodeWithChangingExportSettings {
