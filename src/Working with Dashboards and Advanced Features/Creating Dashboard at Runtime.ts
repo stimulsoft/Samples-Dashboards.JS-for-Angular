@@ -30,27 +30,27 @@ export class CreatingDashboardAtRuntime {
 
         var dataBase = new Stimulsoft.Dashboard.Components.Table.StiDimensionColumn();
         dataBase.expression = "Products.ProductID";
-        tableElement.columns.add(dataBase);
+        tableElement.columns.push(dataBase);
 
         var dataBase1 = new Stimulsoft.Dashboard.Components.Table.StiDimensionColumn();
         dataBase1.expression = "Products.ProductName";
-        tableElement.columns.add(dataBase1);
+        tableElement.columns.push(dataBase1);
 
         var dataBase2 = new Stimulsoft.Dashboard.Components.Table.StiDimensionColumn();
         dataBase2.expression = "Products.UnitPrice";
-        tableElement.columns.add(dataBase2);
+        tableElement.columns.push(dataBase2);
 
         var filter1 = new Stimulsoft.Data.Engine.StiDataFilterRule();
         filter1.condition = Stimulsoft.Data.Engine.StiDataFilterCondition.BeginningWith;
         filter1.path = "Products.ProductID";
         filter1.value = "1";
-        tableElement.dataFilters.add(filter1);
+        tableElement.dataFilters.push(filter1);
 
         var filter2 = new Stimulsoft.Data.Engine.StiDataFilterRule();
         filter2.condition = Stimulsoft.Data.Engine.StiDataFilterCondition.EndingWith;
         filter2.path = "Products.UnitPrice";
         filter2.value = "1";
-        tableElement.dataFilters.add(filter2);
+        tableElement.dataFilters.push(filter2);
 
         dashboard.components.add(tableElement);
     }
