@@ -11,14 +11,14 @@ import { Viewer, Stimulsoft } from "stimulsoft-dashboards-js-angular/viewer";
                 <select (change)="update($event.target)" class="select-globalization">
                         <option [value]="'en-US'">English</option>
                         <option [value]="'de-DE'">Deutsch</option>
-                        <option [value]="'ru-RU'">Russian</option>
+                        <option [value]="'pl-PL'">Polish</option>
                 </select>
             </div>
             <div>
                 <sti-viewer [report]="report" [options]="viewerOptions"></sti-viewer>
             </div>
         </div>`,
-        styleUrls: ['../styles.css']
+    styleUrls: ['../styles.css']
 })
 
 export class GlobalizingDashboard {
