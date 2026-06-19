@@ -14,7 +14,7 @@ export class HowToActivateTheProduct {
         // Using one of the functions below to register your license from the JavaScript code
 
         // Stimulsoft.Base.StiLicense.key = '6vJhGtLLLz2GNviWmUTrhSqnO...';
-        // Stimulsoft.Base.StiLicense.loadFromFile('license.key')
+        // Stimulsoft.Base.StiLicense.loadFromFile('stimulsoft.key')
 
         this.report = new Stimulsoft.Report.StiReport();
         this.report.loadFile("Dashboards/Dashboard.mrt");
